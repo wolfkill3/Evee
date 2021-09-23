@@ -36,7 +36,7 @@
     </div>
 </div>
 <script>
-	<%@ include file="./login/js/login.js" %>
+	<%@ include file="login/js/login.js" %>
 </script>
 
 </body>

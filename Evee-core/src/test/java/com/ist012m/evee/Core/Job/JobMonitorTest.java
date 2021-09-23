@@ -6,6 +6,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import com.ist012m.evee.Core.Job.Job;
+import com.ist012m.evee.Core.Job.JobMonitor;
+
 class JobMonitorTest {
     private static final JobMonitor MONITOR = JobMonitor.getInstance();
 

@@ -8,10 +8,10 @@
         <version>2.5.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.ist012m</groupId>
-    <artifactId>Evee</artifactId>
+    <groupId>Evee-core.com.ist012m</groupId>
+    <artifactId>Evee-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Evee</name>
+    <name>Evee-core</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
