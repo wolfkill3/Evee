@@ -21,6 +21,12 @@ public final class JobMonitor extends AbstractJobFactory {
         return jobs.get();
     }
 
+    @Override
+    public void delete(final Job job) {
+        job.stop();
+        ACTIVE_JOBS.remove(job.getId());
+    }
+
     public static JobMonitor getInstance() {
         if (jobMonitor == null) {
             jobMonitor = new JobMonitor();
@@ -35,11 +41,4 @@ public final class JobMonitor extends AbstractJobFactory {
     public List<String> getActiveJobs() {
         return ACTIVE_JOBS;
     }
-
-    // try {
-    //     String jsonResponse = MAPPER.writeValueAsString(response);
-    //     return MAPPER.readValue(jsonResponse, Job.class);
-    // } catch (JsonProcessingException e) {
-    //     throw new RuntimeException("Exception while creating job");
-    // }
 }

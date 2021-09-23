@@ -25,6 +25,10 @@ public class Job implements Supplier<Job> {
         return isActive;
     }
 
+    public void stop() {
+        this.isActive = false;
+    }
+
     @Override
     public Job get() {
         return this;

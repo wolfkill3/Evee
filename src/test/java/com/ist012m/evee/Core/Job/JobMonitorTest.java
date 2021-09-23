@@ -29,4 +29,15 @@ class JobMonitorTest {
         activeJobs.forEach(System.out::println);
         Assertions.assertTrue(activeJobs.size() > 1);
     }
+
+    @Test
+    void deleteJobTest() {
+        Job job = MONITOR.create(null);
+        MONITOR.getActiveJobs().forEach(System.out::println);
+        MONITOR.delete(job);
+        List<String> activeJobs = MONITOR.getActiveJobs();
+        System.out.println("----------After delete------------");
+        System.out.println(job.getId());
+        Assertions.assertEquals(1, activeJobs.size());
+    }
 }
