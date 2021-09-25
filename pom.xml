@@ -20,6 +20,8 @@
 
     <modules>
         <module>Evee-core</module>
+        <module>Evee-docs</module>
+        <module>Evee-learning</module>
         <module>Evee-webapp</module>
     </modules>
 </project>
