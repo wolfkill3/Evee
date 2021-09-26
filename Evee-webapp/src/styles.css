@@ -3,3 +3,11 @@
 body {
   background-color: bisque;
 }
+
+.card-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

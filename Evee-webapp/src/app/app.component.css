@@ -2,9 +2,17 @@
 .container {
   padding-top: 40px;
 }
+
 .brand-logo {
   margin-left: 20px;
+  color: bisque;
 }
+
 .nav-wrapper {
   background-color: chocolate;
+}
+
+.btn-small {
+  background-color: bisque;
+  color: chocolate;
 }

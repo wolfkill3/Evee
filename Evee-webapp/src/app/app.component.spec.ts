@@ -19,7 +19,7 @@ describe('AppComponent', () => {
   it(`should have as title 'Evee-webapp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Evee-webapp');
+    expect(app.eveeTitle).toEqual('Evee-webapp');
   });
 
   it('should render title', () => {

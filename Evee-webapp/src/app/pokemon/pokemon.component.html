@@ -1,13 +1,13 @@
 <div class="col s3">
-  <div class="card large">
+  <div class="card large" appHover>
     <div class="card-image">
-      <img src="{{pokemon.img}}">
+      <img src="{{pokemon.img}}" alt="">
     </div>
     <div class="card-content">
       <p>{{pokemon.description}}</p>
     </div>
     <div class="card-action">
-      <a href="{{pokedexUrl+pokemon.name}}">Pokedex</a>
+      <a class="waves-effect waves-light btn-small" href="{{pokedexUrl+pokemon.name}}">Pokedex</a>
     </div>
   </div>
 </div>

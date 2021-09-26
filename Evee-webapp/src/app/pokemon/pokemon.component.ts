@@ -4,9 +4,10 @@ import { Pokemon } from 'src/app/pokemon/pokemon';
 @Component({
   selector: 'app-pokemon',
   templateUrl: 'pokemon.component.html',
+  styleUrls: ['pokemon.component.css'],
 })
 export class PokemonComponent {
-  pokedexUrl = 'https://www.pokemon.com/ru/pokedex/'
+  pokedexUrl = 'https://www.pokemon.com/ru/pokedex/';
   @Input()
   pokemon!: Pokemon;
 }
