@@ -4,5 +4,6 @@ import java.util.*;
 
 public class JobRequest {
     public String id;
-    public Date startJob;
+    public Date startJobTime;
+    public String description;
 }
