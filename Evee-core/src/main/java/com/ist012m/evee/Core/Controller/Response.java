@@ -1,4 +1,4 @@
-package com.ist012m.evee.Core;
+package com.ist012m.evee.Core.Controller;
 
 import java.util.*;
 
