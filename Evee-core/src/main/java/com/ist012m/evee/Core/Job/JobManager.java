@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class JobManager {
-    private static final Map<String, Job> ACTIVE_JOBS = new ConcurrentHashMap<>(25);
-    private static final List<Job> CLOSED_JOBS = new CopyOnWriteArrayList<>();
+    private final Map<String, Job> ACTIVE_JOBS = new ConcurrentHashMap<>(25);
+    private final List<Job> CLOSED_JOBS = new CopyOnWriteArrayList<>();
 
     public String submit(Job job) {
         String jobId = job.getId();
