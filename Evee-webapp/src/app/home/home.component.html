@@ -1,0 +1,93 @@
+<div class="home-page">
+  <aside class="side-panel">
+    <div class="side-panel-container">
+      <input class="side-button check-pass" type="image" src="../../assets/checkpass.png" alt="Check pass">
+      <input class="side-button tables" type="image" src="../../assets/statistic.png" alt="Tables">
+      <input class="side-button copyrights" type="image" src="../../assets/power.png" alt="Copyrights">
+      <input class="side-button pokemons" type="image" src="../../assets/evee_face.png" alt="Pokemons">
+    </div>
+  </aside>
+  <aside class="work-place">
+    <aside class="first-column">
+      <div class="photo-place">
+      </div>
+      <div class="check-pass-text">
+        CHECK THE PASS
+      </div>
+    </aside>
+    <aside class="second-column">
+      <div class="information-table">
+        <div class="first-row row">
+          <div class="title-container">
+            <div class="first-row-title row-title">Document type</div>
+          </div>
+          <div class="button-container">
+            <button
+              (click)="russianPassportToggleRule()"
+              [ngClass]="{'all-button-styles' : !russianPassport, 'toggle': russianPassport}"
+              type="button" class="russian-pass-button all-button-styles first-row-button" appMasked>RUSSIAN PASSPORT</button>
+            <button
+              (click)="otherPassportToggleRule()"
+              [ngClass]="{'all-button-styles' : !otherPassport, 'toggle': otherPassport}"
+              type="button" class="other-pass-button all-button-styles first-row-button" appMasked>OTHER</button>
+          </div>
+        </div>
+        <div class="second-row row">
+          <div class="title-container">
+            <div class="second-row-title row-title">Series of document</div>
+            <div class="series-value">2018</div>
+          </div>
+        </div>
+        <div class="third-row row">
+          <div class="title-container">
+            <div class="third-row-title row-title">Number of document</div>
+            <div class="series-value">052241</div>
+          </div>
+        </div>
+        <div class="fourth-row row">
+          <div class="title-container">
+            <div class="fourth-row-title row-title">Seat place</div>
+            <div class="seat-place-value">15F</div>
+          </div>
+        </div>
+        <div class="fifth-row row">
+          <div class="title-container">
+            <div class="fifth-row-title row-title">Luggage</div>
+          </div>
+          <div class="button-container">
+            <button
+              (click)="luggageNoToggleRule()"
+              [ngClass]="{'all-button-styles' : !luggageNo, 'toggle': luggageNo}"
+              type="button" class="without-luggage all-button-styles fifth-row-button" appMasked>NO</button>
+            <button
+              (click)="luggageFirstToggleRule()"
+              [ngClass]="{'all-button-styles' : !luggageFirst, 'toggle': luggageFirst}"
+              type="button" class="one-luggage-place all-button-styles fifth-row-button" appMasked>1 PLACE</button>
+            <button
+              (click)="luggageSecondToggleRule()"
+              [ngClass]="{'all-button-styles' : !luggageSecond, 'toggle': luggageSecond}"
+              type="button" class="two-luggage-place all-button-styles fifth-row-button" appMasked>2 PLACE</button>
+          </div>
+        </div>
+        <div class="sixth-row row">
+          <div class="button-container">
+            <button
+              (click)="checkingToggleRule()"
+              [ngClass]="{'all-button-styles' : checkinToggle, 'toggle': !checkinToggle}"
+              type="button" class="check-in-button all-button-styles" appMasked>CHECK IN</button>
+          </div>
+        </div>
+      </div>
+      <div class="just-another-table">
+        <div class="title-container">
+          <div class="just-row row">some text...</div>
+          <div class="just-row row">some text...</div>
+          <div class="just-row row">some text...</div>
+          <div class="just-row row">some text...</div>
+          <div class="just-row row">some text...</div>
+        </div>
+      </div>
+    </aside>
+  </aside>
+</div>
+
