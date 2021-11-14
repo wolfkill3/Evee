@@ -37,6 +37,12 @@ body {
   z-index: 10;
 }
 
+.scaled {
+  transform: scale(1.2);
+  transition: .5s all;
+  z-index: 10;
+}
+
 .masked {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 4px solid black;
@@ -44,7 +50,23 @@ body {
   cursor: pointer;
 }
 
+.check-pass {
+  transform: scale(1);
+  filter: invert(50%);
+}
+
+.tables {
+  transform: scale(1);
+  filter: invert(50%);
+}
+
+.copyrights {
+  transform: scale(1);
+  filter: invert(50%);
+}
+
 .invert {
+  transform: scale(1);
   filter: invert(100%);
 }
 

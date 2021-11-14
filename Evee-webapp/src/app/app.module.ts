@@ -14,6 +14,7 @@ import { DefaultpageComponent } from './defaultpage/defaultpage.component';
 import { ExporterComponent } from './exporter/exporter.component';
 import { CopyrightsComponent } from './copyrights/copyrights.component';
 import { InvertDirective } from 'src/app/invert.directive';
+import { ScaleDirective } from 'src/app/scaled.directive';
 
 const appRoutes: Routes = [
   {
@@ -56,6 +57,7 @@ const appRoutes: Routes = [
     HoverDirective,
     MaskedDirective,
     InvertDirective,
+    ScaleDirective,
   ],
   imports: [
     BrowserModule,
