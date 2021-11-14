@@ -21,4 +21,12 @@ export class PokemonComponent {
   toCheckPassPage() {
     this.router.navigateByUrl('home');
   }
+
+  toExporterPage() {
+    this.router.navigateByUrl('exporter');
+  }
+
+  toCopyrightsPage() {
+    this.router.navigateByUrl('copyrights');
+  }
 }

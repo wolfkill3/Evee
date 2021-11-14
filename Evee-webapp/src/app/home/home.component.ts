@@ -49,6 +49,14 @@ export class HomeComponent {
   constructor(private router: Router) {
   }
 
+  toExporterPage() {
+    this.router.navigateByUrl('exporter');
+  }
+
+  toCopyrightsPage() {
+    this.router.navigateByUrl('copyrights');
+  }
+
   toPokemonsPage() {
     this.router.navigateByUrl('pokemon');
   }

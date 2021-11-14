@@ -10,6 +10,8 @@ import { LoginComponent } from 'src/app/login/login.component';
 import { HomeComponent } from 'src/app/home/home.component';
 import { MaskedDirective } from 'src/app/masked.directive';
 import { DefaultpageComponent } from './defaultpage/defaultpage.component';
+import { ExporterComponent } from './exporter/exporter.component';
+import { CopyrightsComponent } from './copyrights/copyrights.component';
 
 const appRoutes: Routes = [
   {
@@ -24,6 +26,14 @@ const appRoutes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'exporter',
+    component: ExporterComponent,
+  },
+  {
+    path: 'copyrights',
+    component: CopyrightsComponent,
   },
   {
     path: 'pokemon',
@@ -41,6 +51,8 @@ const appRoutes: Routes = [
     HoverDirective,
     MaskedDirective,
     DefaultpageComponent,
+    ExporterComponent,
+    CopyrightsComponent,
   ],
   imports: [
     BrowserModule,
