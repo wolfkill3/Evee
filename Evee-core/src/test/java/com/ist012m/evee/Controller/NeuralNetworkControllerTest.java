@@ -14,7 +14,6 @@ class NeuralNetworkControllerTest {
     }
     public void incr(int x) {
         Object object = null;
-        char ch = null;
 
         x = x+1;
     }

@@ -6,10 +6,10 @@
   <div class="sign-in-page-input-fields">
     <div class="sign-in-page-text">Authorization</div>
     <div class="login">
-      <input class="login-field" type="text" appHover>
+      <input class="login-field" type="text" appMasked>
     </div>
     <div class="password">
-      <input class="password-field" type="password" appHover>
+      <input class="password-field" type="password" appMasked>
     </div>
   </div>
 
@@ -17,7 +17,7 @@
   <div class="sign-in-button">
     <div class="button-login-container">
       <div class="button-login" appHover>
-        <button class="login-button">LOG IN</button>
+        <button class="login-button" (click)="checkCredentials()">LOG IN</button>
       </div>
     </div>
   </div>

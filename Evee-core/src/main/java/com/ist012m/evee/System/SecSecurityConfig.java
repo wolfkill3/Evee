@@ -8,16 +8,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 @EnableWebSecurity
 public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
-
     // @Override
-    // protected void configure(final HttpSecurity http) throws Exception {
-    //     // http
-    //     //     .authorizeRequests()
-    //     //     // ... endpoints
-    //     //     .formLogin()
-    //     //     .loginPage("/login.html")
-    //     //     .loginProcessingUrl("/login")
-    //     //     .defaultSuccessUrl("/homepage.html", true)
-    //     // // ... other configuration
+    // protected void configure(final HttpSecurity security) throws Exception {
+    //     security.formLogin()
+    //             .loginProcessingUrl("localhost:4200/login")
+    //             .defaultSuccessUrl("localhost:4200/home", true);
     // }
 }

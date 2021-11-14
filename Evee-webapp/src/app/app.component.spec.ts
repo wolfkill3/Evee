@@ -16,10 +16,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Evee-webapp'`, () => {
+  it(`should have as title 'pokemonPage'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.eveeTitle).toEqual('Evee-webapp');
+    expect(app.pokemonPage).toEqual('pokemonPage');
   });
 
   it('should render title', () => {

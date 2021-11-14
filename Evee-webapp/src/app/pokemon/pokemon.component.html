@@ -1,14 +1,27 @@
-<div class="col s3">
-  <div class="card large" appHover>
-    <div class="card-image">
-      <img src="{{pokemon.img}}" alt="">
+
+<div class="pokemon-page">
+  <aside class="side-panel">
+    <div class="side-panel-container">
+      <input class="side-button check-pass" type="image" src="../../assets/checkpass.png" alt="Check pass" (click)="toCheckPassPage()" appInvert>
+      <input class="side-button tables" type="image" src="../../assets/statistic.png" alt="Tables" (click)="toExporterPage()" appInvert>
+      <input class="side-button copyrights" type="image" src="../../assets/power.png" alt="Copyrights" (click)="toCopyrightsPage()" appInvert>
+      <input class="side-button pokemons" type="image" src="../../assets/evee_face.png" alt="Pokemons" appInvert>
     </div>
-    <div class="card-content">
-      <p>{{pokemon.description}}</p>
-    </div>
-    <div class="card-action">
-      <a class="waves-effect waves-light btn-small" href="{{pokedexUrl+pokemon.name}}">Pokedex</a>
+  </aside>
+  <div class="work-place">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <div class="col s3" *ngFor="let pokemon of pokemons">
+      <div class="card large" appInvert>
+        <div class="card-image">
+          <img class="pokemon-img" src="{{pokemon.img}}" alt="not found">
+        </div>
+        <div class="card-content">
+          <p>{{pokemon.description}}</p>
+        </div>
+        <div class="card-action">
+          <a class="pokedex-btn" href="{{pokedexUrl+pokemon.name}}">Pokedex</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-

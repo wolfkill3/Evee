@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Pokemon } from 'src/app/pokemon/pokemon';
+import { PokemonService } from 'src/app/pokemon/pokemon.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pokemon',
@@ -8,6 +10,23 @@ import { Pokemon } from 'src/app/pokemon/pokemon';
 })
 export class PokemonComponent {
   pokedexUrl = 'https://www.pokemon.com/ru/pokedex/';
+  pokemons: Pokemon[] = [];
   @Input()
   pokemon!: Pokemon;
+
+  constructor(private pokemonService: PokemonService, private router: Router) {
+    this.pokemons = this.pokemonService.pokemons;
+  }
+
+  toCheckPassPage() {
+    this.router.navigateByUrl('home');
+  }
+
+  toExporterPage() {
+    this.router.navigateByUrl('exporter');
+  }
+
+  toCopyrightsPage() {
+    this.router.navigateByUrl('copyrights');
+  }
 }

@@ -1,0 +1,51 @@
+.exporter-page {
+  font-family: Helvetica, serif;
+  font-weight: bold;
+  flex-direction: row;
+}
+
+.work-place {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container{
+  height: 50px;
+  width: 1185px;
+}
+
+.info-table {
+  flex-direction: row;
+  display: flex;
+  margin: 65px auto;
+  height: 800px;
+  width: 1207px;
+  box-shadow: 0 0 6px gray;
+  background-color: white;
+}
+
+.export-table {
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+}
+
+.table-row {
+  text-align: center;
+  width: 293.0px;
+  height: 48px;
+  box-shadow: 0 0 3px grey;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+}
+
+.table-header {
+  width: 293.3px;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+}
