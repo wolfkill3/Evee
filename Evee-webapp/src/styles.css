@@ -9,6 +9,7 @@
 /*  justify-content: center;*/
 /*  align-items: center;*/
 /*}*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
 
 
 html {
@@ -43,9 +44,54 @@ body {
   cursor: pointer;
 }
 
+.side-panel {
+  float: left;
+  max-width: 100px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px gray;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: stretch;
+  height: 944px;
+}
+
+
+.side-panel-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-button {
+  margin: 10px;
+  max-width: 80px;
+  max-height: 120px;
+}
+
+.check-pass {
+  vertical-align: top;
+}
+
+.tables {
+  vertical-align: top;
+}
+
+.copyrights {
+  vertical-align: top;
+}
+
+.pokemons {
+  vertical-align: bottom;
+  margin-top: 530px;
+}
+
 .toggle {
   font-weight: bold;
-  font-family: Roboto, serif;
+  font-family: Helvetica, serif;
   background-color: black;
   color: white;
   border: 3px solid gray;

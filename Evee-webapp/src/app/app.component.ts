@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PokemonService } from 'src/app/pokemon/pokemon.service';
 import { Pokemon } from 'src/app/pokemon/pokemon';
 
@@ -8,8 +8,8 @@ import { Pokemon } from 'src/app/pokemon/pokemon';
   styleUrls: ['./app.component.css'],
   providers: [PokemonService],
 })
-export class AppComponent {
-  eveeTitle = 'Evee-webapp';
+export class AppComponent  implements OnInit{
+  pokemonPage = 'pokemonPage';
   pokemons: Pokemon[] = [];
 
   constructor(private pokemonService: PokemonService) {

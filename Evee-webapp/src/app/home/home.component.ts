@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,6 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   russianPassport = false;
   otherPassport = false;
-  luggageToggle = true;
   luggageNo = false;
   luggageFirst = false;
   luggageSecond = false;
@@ -42,15 +42,14 @@ export class HomeComponent {
       this.luggageSecond = true
   }
 
-  private alternateLuggageToggle() {
-
-  }
-
-  luggageToggleRule() {
-    this.luggageToggle = !this.luggageToggle;
-  }
-
   checkingToggleRule(){
     this.checkinToggle = !this.checkinToggle;
+  }
+
+  constructor(private router: Router) {
+  }
+
+  toPokemonsPage() {
+    this.router.navigateByUrl('pokemon');
   }
 }
