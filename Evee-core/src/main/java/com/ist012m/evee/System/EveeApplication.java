@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class EveeApplication {
     public static void main(String[] args) {
         SpringApplication application = new SpringApplication(EveeApplication.class);
-        application.setDefaultProperties(Collections.singletonMap("server.port", "8084"));
+        application.setDefaultProperties(Collections.singletonMap("server.port", "8083"));
         TrainJobFactory.getInstance();
         application.run(args);
     }

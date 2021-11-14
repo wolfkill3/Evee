@@ -58,7 +58,7 @@
   background-color: white;
   box-shadow: 0 2px 0 0 gray;
   margin-top: 0;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   padding-top: 10px;
   padding-left: 15px;
   padding-bottom: 10px;
@@ -70,6 +70,7 @@
 
 .just-row {
   height: 50px;
+  margin-bottom: 1px;
 }
 
 .all-button-styles {

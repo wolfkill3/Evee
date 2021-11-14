@@ -51,9 +51,7 @@ body {
   border: 1px solid black;
   border-radius: 6px;
   box-shadow: 2px 2px 5px gray;
-  margin-left: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin:auto 0 auto 5px;
   display: flex;
   align-items: stretch;
   height: 944px;
@@ -64,6 +62,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 944px;
 }
 
 .side-button {
