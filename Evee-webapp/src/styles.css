@@ -44,6 +44,10 @@ body {
   cursor: pointer;
 }
 
+.invert {
+  filter: invert(100%);
+}
+
 .side-panel {
   float: left;
   max-width: 100px;

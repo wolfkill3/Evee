@@ -3,11 +3,37 @@
     <div class="side-panel-container">
       <input class="side-button check-pass" type="image" src="../../assets/checkpass.png" alt="Check pass" (click)="toHomePage()">
       <input class="side-button tables" type="image" src="../../assets/statistic.png" alt="Tables">
-      <input class="side-button copyrights" type="image" src="../../assets/power.png" alt="Copyrights"(click)="toCopyrightsPage()">
+      <input class="side-button copyrights" type="image" src="../../assets/power.png" alt="Copyrights" (click)="toCopyrightsPage()">
       <input class="side-button pokemons" type="image" src="../../assets/evee_face.png" alt="Pokemons" (click)="toPokemonsPage()">
     </div>
   </aside>
   <div class="work-place">
+    <cdk-virtual-scroll-viewport itemSize="10" class="info-table">
+      <table class="export-table" style="width: 100%;">
+        <div class="table-container">
+          <td class="table-row table-header">DATE & TIME</td>
+          <td class="table-row table-header">SERIES OF PASSPORT</td>
+          <td class="table-row table-header">NUMBER OF PASSPORT</td>
+          <td class="table-row table-header">SEAT PLACE</td>
+        </div>
+        <ng-container *cdkVirtualFor="let row of rows">
+          <div class="table-container">
+            <tr style="width:100%; min-height: 30px;">
+              <td class="table-row">{{row}}</td>
+              <td class="table-row">{{row}}</td>
+              <td class="table-row">{{row}}</td>
+              <td class="table-row">{{row}}</td>
+            </tr>
+          </div>
+        </ng-container>
+      </table>
+
+
+      <!--      <div class="table-columns">-->
+      <!--        <div *cdkVirtualFor="let item of items" class="table-row">{{item}}</div>-->
+      <!--        <div *cdkVirtualFor="let item of items" class="table-row">{{item}}</div>-->
+      <!--      </div>-->
+    </cdk-virtual-scroll-viewport>
   </div>
 </div>
 

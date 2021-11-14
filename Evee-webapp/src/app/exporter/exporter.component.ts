@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./exporter.component.css']
 })
 export class ExporterComponent implements OnInit {
+  rows = Array.from({ length: 100 }).map((_, i) => `Item #${i}`);
 
   constructor(private router: Router) { }
 

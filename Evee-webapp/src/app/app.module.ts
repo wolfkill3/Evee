@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { Routes, RouterModule, Router } from '@angular/router';
 
@@ -12,6 +13,7 @@ import { MaskedDirective } from 'src/app/masked.directive';
 import { DefaultpageComponent } from './defaultpage/defaultpage.component';
 import { ExporterComponent } from './exporter/exporter.component';
 import { CopyrightsComponent } from './copyrights/copyrights.component';
+import { InvertDirective } from 'src/app/invert.directive';
 
 const appRoutes: Routes = [
   {
@@ -47,16 +49,18 @@ const appRoutes: Routes = [
     PokemonComponent,
     LoginComponent,
     HomeComponent,
-    //Директивы
-    HoverDirective,
-    MaskedDirective,
     DefaultpageComponent,
     ExporterComponent,
     CopyrightsComponent,
+    //Директивы
+    HoverDirective,
+    MaskedDirective,
+    InvertDirective,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
+    ScrollingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
