@@ -7,7 +7,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 class JobManagerTest {
-    private static final TrainJobFactory MONITOR = TrainJobFactory.getInstance();
+    private static final AnalizeJobFactory MONITOR = AnalizeJobFactory.getInstance();
     private static final JobManager MANAGER = new JobManager();
 
     @BeforeAll

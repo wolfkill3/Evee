@@ -2,7 +2,6 @@ package com.ist012m.evee.Core.Job;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.function.Supplier;
 
 public abstract class Job {
     private final AtomicBoolean isCanceled;

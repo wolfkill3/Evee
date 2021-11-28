@@ -7,6 +7,10 @@
   flex-direction: row;
 }
 
+.pokemons {
+  transform: scale(1.1);
+}
+
 .work-place {
   margin: auto;
   display: flex;
